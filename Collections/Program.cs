@@ -14,7 +14,8 @@ namespace Collections
             //CollectionsDemo.ArrayListCollection();
             //CollectionsDemo.DictionaryCollection();
             //CollectionsDemo.StackDemo();
-            CollectionsDemo.SetCollection();
+            //CollectionsDemo.SetCollection();
+            CollectionsDemo.QueueDemo();
             Console.ReadLine();
         }
     }

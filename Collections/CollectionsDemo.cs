@@ -100,5 +100,27 @@ namespace Collections
             //    Console.WriteLine(element);
             //}
         }
+        public static void QueueDemo()
+        {
+            Queue<int> queue = new Queue<int>();
+            queue.Enqueue(10);
+            queue.Enqueue(20);
+            queue.Enqueue(30);
+            queue.Enqueue(50);
+            foreach(int element in queue)
+            {
+                Console.WriteLine(element);
+            }
+            Console.WriteLine("Head is : " + queue.Peek());
+            int dequeue=queue.Dequeue();
+            Console.WriteLine("Dequeue element "+dequeue);
+
+            Console.WriteLine("Iterating queue elements after the dequeue of one element");
+            Queue<int>.Enumerator enumerator=queue.GetEnumerator();
+            while(enumerator.MoveNext())
+            {
+                Console.WriteLine(enumerator.Current);
+            }
+        }
     }
 }
