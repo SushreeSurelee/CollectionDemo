@@ -13,7 +13,8 @@ namespace Collections
             //CollectionsDemo.ListCollection();
             //CollectionsDemo.ArrayListCollection();
             //CollectionsDemo.DictionaryCollection();
-            CollectionsDemo.StackDemo();
+            //CollectionsDemo.StackDemo();
+            CollectionsDemo.SetCollection();
             Console.ReadLine();
         }
     }

@@ -82,5 +82,23 @@ namespace Collections
             string pop = stack.Pop();
             Console.WriteLine("\npopped element is : " +pop);
         }
+        public static void SetCollection()
+        {
+            HashSet<int> set = new HashSet<int>();
+            set.Add(10);
+            set.Add(40);
+            set.Add(30);
+            set.Add(20);
+
+            HashSet<int>.Enumerator enumerator = set.GetEnumerator();
+            while(enumerator.MoveNext())
+            {
+                Console.WriteLine(enumerator.Current);
+            }
+            //foreach(var element in set)
+            //{
+            //    Console.WriteLine(element);
+            //}
+        }
     }
 }
