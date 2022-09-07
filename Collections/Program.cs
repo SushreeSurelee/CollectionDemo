@@ -11,7 +11,8 @@ namespace Collections
         static void Main(string[] args)
         {
             //CollectionsDemo.ListCollection();
-            CollectionsDemo.ArrayListCollection();
+            //CollectionsDemo.ArrayListCollection();
+            CollectionsDemo.DictionaryCollection();
             Console.ReadLine();
         }
     }

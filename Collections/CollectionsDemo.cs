@@ -56,6 +56,18 @@ namespace Collections
             }
             //Will be same like List
         }
+        public static void DictionaryCollection()
+        {
+            IDictionary<int, string> numberNames = new Dictionary<int, string>();
+            numberNames.Add(1, "One");
+            numberNames.Add(2, "Two");
+            numberNames.Add(3, "Three");
+            foreach (KeyValuePair<int, string> kvp in numberNames)
+            {
+                Console.WriteLine("Key : {0}, Value : {1}", kvp.Key, kvp.Value);
+            }
+            Console.WriteLine("Fetching value using 3 key : " + numberNames[3]);
+        }
 
     }
 }
