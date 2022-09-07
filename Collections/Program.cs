@@ -10,7 +10,8 @@ namespace Collections
     {
         static void Main(string[] args)
         {
-            CollectionsDemo.ListCollection();
+            //CollectionsDemo.ListCollection();
+            CollectionsDemo.ArrayListCollection();
             Console.ReadLine();
         }
     }

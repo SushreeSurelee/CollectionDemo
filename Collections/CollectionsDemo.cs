@@ -44,5 +44,18 @@ namespace Collections
                 Console.Write(" " + element + " ");
             }
         }
+        public static void ArrayListCollection()
+        {
+            ArrayList arrayList = new ArrayList();
+            arrayList.Add(10);
+            arrayList.Add("abc");
+            arrayList.Add(12.45);
+            foreach (var element in arrayList)//var becuase taken different datatype above
+            {
+                Console.Write(" " + element + " ");
+            }
+            //Will be same like List
+        }
+
     }
 }
