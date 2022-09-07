@@ -68,6 +68,19 @@ namespace Collections
             }
             Console.WriteLine("Fetching value using 3 key : " + numberNames[3]);
         }
-
+        public static void StackDemo()
+        {
+            Stack<string> stack = new Stack<string>();
+            stack.Push("Sachin");
+            stack.Push("Virat");
+            stack.Push("Mahi");
+            stack.Push("Yuvi");
+            foreach(var element in stack)
+            {
+                Console.WriteLine(element);
+            }
+            string pop = stack.Pop();
+            Console.WriteLine("\npopped element is : " +pop);
+        }
     }
 }
